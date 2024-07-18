@@ -1,9 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "../../common/Image";
 import { Link } from "react-router-dom";
-export default function Hero() {
+export default function Hero({setOpen}) {
   return (
-    <section className="relative pb-10 pt-20 md:pt-32 lg:h-[88vh]">
+    <section className="relative pb-10 pt-20 md:pt-32 lg:h-[88vh] dark">
       <picture className="pointer-events-none absolute inset-x-0 top-0 -z-10 dark:hidden">
         <Image
           width={1920}
@@ -34,7 +34,7 @@ export default function Hero() {
             </p>
             <div className="flex space-x-4">
               <Link
-                href="/create"
+                  onClick={()=>{setOpen()}}
                 className="w-36 rounded-full bg-accent py-3 px-8 text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark"
               >
               BUY
