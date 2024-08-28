@@ -21,8 +21,13 @@
                 "dist"
             ],
             "type": "assets"
+        },
+        "casino": {
+            "main": "src/fungibletoken_backend/main.mo",
+            "type": "motoko"
         }
     },
+    
     "defaults": {
         "build": {
             "args": "",

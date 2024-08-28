@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "../../common/Image";
 import { Link } from "react-router-dom";
-export default function Hero({setOpen}) {
+export default function Hero({ setOpen }) {
   return (
     <section className="relative pb-10 pt-20 md:pt-32 lg:h-[88vh] dark">
       <picture className="pointer-events-none absolute inset-x-0 top-0 -z-10 dark:hidden">
@@ -27,18 +27,32 @@ export default function Hero({setOpen}) {
         <div className="grid h-full items-center gap-4 md:grid-cols-12 mb-10">
           <div className="col-span-6 flex h-full flex-col items-center justify-center py-10 md:items-start md:py-20 xl:col-span-4">
             <h1 className="mb-6 text-center font-display text-5xl text-jacarta-700 dark:text-white md:text-left lg:text-6xl xl:text-7xl">
-             ICMAGA
+              ICMAGA
             </h1>
             <p className="mb-8 text-center text-lg dark:text-jacarta-200 md:text-left">
-            ICMAGA It’s more than just a Meme token, it’s a statement. A statement that you’re here to Make America Great Again. With a total supply of only 10,000 tokens, a 3% burn from of supply, and an 8% burnt liquidity pool, ICMAGA is designed for scarcity and stability spectacular potential
+              ICMAGA It’s more than just a Meme token, it’s a statement. A
+              statement that you’re here to Make America Great Again. With a
+              total supply of only 10,000 tokens, a 3% burn from of supply, and
+              an 8% burnt liquidity pool, ICMAGA is designed for scarcity and
+              stability spectacular potential
             </p>
             <div className="flex space-x-4">
-              <Link
-                  onClick={()=>{setOpen()}}
+              <a
+                href="https://app.icpswap.com/swap?input=ryjl3-tyaaa-aaaaa-aaaba-cai&output=6phnw-ryaaa-aaaap-ahibq-cai"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-36 rounded-full bg-accent py-3 px-8 text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark"
               >
-              BUY
-              </Link>
+               Buy ICMAGA
+              </a>
+              <a
+                href="https://app.icpswap.com/swap?input=ryjl3-tyaaa-aaaaa-aaaba-cai&output=3mpua-viaaa-aaaap-ahpba-cai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-36 rounded-full bg-accent py-3 px-8 text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark"
+              >
+                Buy <br></br>TBTC
+              </a>
               <Link
                 href="/collections"
                 className=" rtl:!mr-6 w-36 rounded-full bg-white py-3 px-8 text-center font-semibold text-accent shadow-white-volume transition-all hover:bg-accent-dark hover:text-white hover:shadow-accent-volume"
