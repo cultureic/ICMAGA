@@ -11,6 +11,7 @@ const activeMobileMenu = () => {
       mobileMenu.classList.add("nav-menu--is-open");
     };
     mobileMenuActiveButton.addEventListener("click", () => {
+      console.log("sup")
       toggleFunction();
     });
   }

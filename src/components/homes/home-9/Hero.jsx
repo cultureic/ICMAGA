@@ -2,7 +2,7 @@ import Image from "../../common/Image";
 import { Link } from "react-router-dom";
 
 export default function Hero() {
-  return (
+  return (s
     <section className="relative h-screen">
       <picture className="pointer-events-none absolute -z-10 inset-0">
         <Image

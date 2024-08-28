@@ -34,15 +34,17 @@ export const useAuthClient = () => {
   };
 
   const verifyConnection = async () => {
-    const connected = await window.ic.plug.isConnected();
-    if (connected) {
-      setIsAuthenticated(true);
-      setPrincipalAsync();
+    if (window.ic && window.ic.plug) {
+      const connected = await window.ic.plug.isConnected();
+      if (connected) {
+        setIsAuthenticated(true);
+        setPrincipalAsync();
+      }
     }
     // if (!connected) requestConnectAsync();
   };
 
-  useEffect( () => {
+  useEffect(() => {
     if (!publicKey && !principal) {
       verifyConnection();
     }
